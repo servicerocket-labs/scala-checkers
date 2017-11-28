@@ -1,5 +1,7 @@
 Scala Checkers
 ==============
+[![Build Status](https://travis-ci.org/ServiceRocket/scala-checkers.svg?branch=master)](https://travis-ci.org/ServiceRocket/scala-checkers)
+
 Scala Checkers is an extension to ScalaCheck standards generators.
 ### Usage
 ```
