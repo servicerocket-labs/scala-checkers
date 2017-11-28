@@ -17,6 +17,7 @@ resolvers := Resolver
   )
 
 credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+publishMavenStyle := true
 publishTo := version { (v: String) =>
   val Nexus = "https://t-nx2.performancerocket.com/"
   if (v.trim.endsWith("SNAPSHOT")) Some("ServiceRocket's Snapshots" at Nexus + "content/repositories/snapshots")
@@ -24,7 +25,7 @@ publishTo := version { (v: String) =>
 }.value
 
 name := "scala-checkers"
-version := "0.1.0-SNAPSHOT"
+version := "0.1.0"
 description := "ScalaCheck Generators Extension"
 organization := "com.servicerocket"
 organizationName := "ServiceRocket"
