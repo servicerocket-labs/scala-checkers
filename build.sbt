@@ -25,7 +25,7 @@ publishTo := version { (v: String) =>
 }.value
 
 name := "scala-checkers"
-version := "0.1.0"
+version := "0.1.1-SNAPSHOT"
 description := "ScalaCheck Generators Extension"
 organization := "com.servicerocket"
 organizationName := "ServiceRocket"
