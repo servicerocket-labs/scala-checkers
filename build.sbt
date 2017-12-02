@@ -3,19 +3,6 @@ scalacOptions ++= Seq("-feature", "-target:jvm-1.8")
 scalaVersion := "2.11.12"
 val ScalacheckVersion = "1.13.5"
 
-resolvers := Resolver
-  .withDefaultResolvers(
-    mavenCentral = true,
-    userResolvers = Seq(
-      Resolver.mavenLocal,
-      "Atlassian's Maven Public Repository" at "https://maven.atlassian.com/content/groups/public/",
-      "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
-      "Typesafe Simple Repository" at "http://repo.typesafe.com/typesafe/simple/maven-releases/",
-      "ServiceRocket's Private Repository" at "https://t-nx2.performancerocket.com/content/groups/private/",
-      "ServiceRocket's Public Repository" at "https://t-nx2.performancerocket.com/content/groups/public/"
-    )
-  )
-
 credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 publishMavenStyle := true
 publishTo := version { (v: String) =>
