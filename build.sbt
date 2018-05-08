@@ -3,6 +3,7 @@ scalacOptions ++= Seq("-feature", "-target:jvm-1.8")
 scalaVersion := "2.12.4"
 val ScalacheckVersion = "1.13.5"
 
+crossScalaVersions := Seq("2.11.12", "2.12.4")
 credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 publishMavenStyle := true
 publishTo := version { (v: String) =>
