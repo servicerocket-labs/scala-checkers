@@ -1,6 +1,7 @@
 Scala Checkers
 ==============
 [![Build Status](https://travis-ci.org/servicerocket-labs/scala-checkers.svg?branch=master)](https://travis-ci.org/servicerocket-labs/scala-checkers)
+![GitHub Action](https://github.com/servicerocket-labs/scala-checkers/actions/workflows/ci.yml/badge.svg)
 
 Scala Checkers is an extension to ScalaCheck standards generators.
 ### Usage
